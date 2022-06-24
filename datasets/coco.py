@@ -73,7 +73,7 @@ class CocoCaption(Dataset):
 
     def _process(self, image_id):
         val = str(image_id).zfill(5)
-        return val + '.pnf'
+        return val + '.png'
 
     def __len__(self):
         return len(self.annot)
