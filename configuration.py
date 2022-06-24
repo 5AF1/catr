@@ -15,13 +15,14 @@ class Config(object):
         self.backbone = 'resnet101'
         self.position_embedding = 'sine'
         self.dilation = True
-        
+
         # Basic
         self.device = 'cuda'
         self.seed = 42
         self.batch_size = 32
         self.num_workers = 8
-        self.checkpoint = './checkpoint.pth'
+        #self.checkpoint = './checkpoint.pth'
+        self.checkpoint = '/content/drive/.shortcut-targets-by-id/1AA2e7AH-lZzy9zGoztZSSwnjoZDffmGF/catr/checkpoint.pth'
         self.clip_max_norm = 0.1
 
         # Transformer
