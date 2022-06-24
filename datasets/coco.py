@@ -72,8 +72,8 @@ class CocoCaption(Dataset):
         self.max_length = max_length + 1
 
     def _process(self, image_id):
-        val = str(image_id).zfill(12)
-        return val + '.jpg'
+        val = str(image_id).zfill(5)
+        return val + '.png'
 
     def __len__(self):
         return len(self.annot)
